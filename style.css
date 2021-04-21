@@ -1,0 +1,151 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #0f0c29, #131433, #19193e, #1f1e49, #262454, #282655, #2a2857, #2c2a58, #2a294f, #282746, #26263e, #242435);
+}
+
+header{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 20vh;
+    grid-template-areas: "menu menu menu menu cart";
+}
+
+header ul{
+    grid-area: menu;
+    display: flexbox;
+    align-self: center;
+}
+
+header span{
+    grid-area: cart;
+    display: flexbox;
+    align-self: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+header ul li{
+    float: left;
+    list-style-type: none;
+    padding: 20px;
+    margin-right: 15px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+span a{
+    text-decoration: none;
+    color: white;
+}
+
+span a:hover{
+    color: #00f260;
+    transition-duration: 700ms;
+}
+
+header ul li a:hover{
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #00f260;
+    transition-duration: 700ms;
+}
+
+main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card{
+    display: inline-block;
+    margin: 1%;
+}
+
+/* CARRINHO DE COMPRAS */
+
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.products{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.products-container ion-icon{
+    font-size: 25px;
+    color: #00f260;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid #00f260;
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 45%;
+    color: white;
+}
+
+.price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.quantity{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.total{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
+}
+
+
